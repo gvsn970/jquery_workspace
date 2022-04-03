@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#button").click(()=>{
+      console.log("called")
+      $("p").animate({left:'200px'});
+      console.log("called after animate")
+  });
+
+});
+</script>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+
+  <p syle="padding:5px">This is a paragraph in another div.</p>
+  <p syle="padding:5px">This is a paragraph in another div.</p>
+
+
+
+<button id="button">animate</button>
+
+
+</body>
+</html>
